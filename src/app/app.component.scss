@@ -1,0 +1,34 @@
+/* Style for the main container */
+.main-container {
+  height: 500px; /* Fixed height for the main container */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for container A (adjustable height) */
+.container-a {
+  flex: 1; /* This makes container A take up the available space */
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Style for container B */
+.container-b {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+/* Style for the Plotly chart inside container B */
+#plotly-chart {
+  width: 100%; /* Make the chart responsive in width */
+  height: 100%; /* Make the chart responsive in height */
+}
+/* Style for the resizable handle */
+.resizable-handle {
+  background-color: #3498db;
+  height: 8px;
+  cursor: ns-resize;
+  position: relative;
+  top: -4px;
+  width: 100%;
+}
